@@ -35,8 +35,7 @@ body {
 }
 #backgroundsplash {
     width: 100%;
-    position: relative;;
-    top: -100px;
+    position: relative;s
     opacity: .7;
     z-index: 0;
 }
