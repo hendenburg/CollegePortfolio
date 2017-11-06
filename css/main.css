@@ -9,9 +9,9 @@ body {
 #splash {
     width: 100%;
     height: auto;
+    max-height: 100vh;
     padding: 0;
     overflow: hidden;;
-    max-height: 1280px;
     background: black;
     z-index: 1;
     -webkit-box-shadow: inset 0px 15px 62px -23px rgba(0,0,0,0.75);
