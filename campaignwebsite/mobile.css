@@ -1,0 +1,12 @@
+#hero {
+    width: 100% !important;
+    height: 35% !important;
+    padding: 0 !important;
+    border-radius: 0px 0px 45% 45% !important;
+}
+
+#heroimage {
+    height: 95% !important;
+    width: auto !important;
+    margin: auto;
+}
