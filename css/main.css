@@ -11,7 +11,7 @@ body {
     height: auto;
     padding: 0;
     overflow: hidden;;
-    max-height: 100vh;
+    max-height: 1280px;
     background: black;
     z-index: 1;
     -webkit-box-shadow: inset 0px 15px 62px -23px rgba(0,0,0,0.75);
@@ -130,7 +130,7 @@ body {
 #halftextsecondary {
     margin-left: 30px;
     color: #14213D;
-    font-size: 2vw;
+    font-size: 2em;
     font-family: butlerlight
 }
 
@@ -173,7 +173,7 @@ box-shadow: inset 0px 15px 62px -23px rgba(0,0,0,0.75);
 }
 
 #contact {
-    font-family: monospace;
+    font-family: Open Sans;
     top: 0;
     bottom: 0;
     padding: 20px;
@@ -197,123 +197,3 @@ box-shadow: inset 0px 15px 62px -23px rgba(0,0,0,0.75);
   &:hover {
     background-size: 100% 88%;
   }
-
-/*------ Mixins -----*/
-/*--------- End Mixins ---------*/
-.bg {
-  position: fixed;
-  z-index: -999999;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  background-color: #bfbfbf;
-  -moz-box-shadow: inset 0px 0px 100px 15px rgba(183, 183, 183, 0.75);
-  -webkit-box-shadow: inset 0px 0px 100px 15px rgba(183, 183, 183, 0.75);
-  box-shadow: inset 0px 0px 100px 15px rgba(183, 183, 183, 0.75);
-  background-color: white;
-  *zoom: 1;
-  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=1, startColorstr='#FFFFFFFF', endColorstr='#FFE8E8E8');
-  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHJhZGlhbEdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjUwJSIgY3k9IiIgcj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2U4ZThlOCIvPjwvcmFkaWFsR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
-  background-size: 100%;
-  background-image: -moz-radial-gradient(center, ellipse cover, #ffffff 0%, #e8e8e8 100%);
-  background-image: -webkit-radial-gradient(center, ellipse cover, #ffffff 0%, #e8e8e8 100%);
-  background-image: radial-gradient(ellipse cover at center, #ffffff 0%, #e8e8e8 100%);
-}
-
-.wrapper {
-  width: 500px;
-  margin: 100px auto 0 auto;
-}
-
-ul {
-  width: 200px;
-  height: 46px;
-  margin: 0 auto;
-}
-
-li {
-  border: 1px solid #cccccc;
-  height: 44px;
-  width: 44px;
-  display: inline-block;
-  background: #fff;
-  float: left;
-}
-
-li:nth-of-type(1), .fb {
-  -webkit-border-top-right-radius: 0;
-  -webkit-border-bottom-right-radius: 0;
-  -webkit-border-bottom-left-radius: 3px;
-  -webkit-border-top-left-radius: 3px;
-  -moz-border-radius-topright: 0;
-  -moz-border-radius-bottomright: 0;
-  -moz-border-radius-bottomleft: 3px;
-  -moz-border-radius-topleft: 3px;
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 3px;
-  border-top-left-radius: 3px;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
-  border-right: 0;
-  background: url("http://grantcr.com/files/fbnorm.png") center center no-repeat;
-  background-color: transparent;
-  -moz-box-shadow: -1px -1px 1px #e2e2e2;
-  -webkit-box-shadow: -1px -1px 1px #e2e2e2;
-  box-shadow: -1px -1px 1px #e2e2e2;
-}
-
-li:nth-of-type(2), .tw {
-  background: url("http://grantcr.com/files/twnorm.png") center center no-repeat;
-  background-color: transparent;
-  -moz-box-shadow: 0px -1px 1px #e2e2e2;
-  -webkit-box-shadow: 0px -1px 1px #e2e2e2;
-  box-shadow: 0px -1px 1px #e2e2e2;
-}
-
-li:nth-of-type(3), .rss {
-  -webkit-border-top-right-radius: 3px;
-  -webkit-border-bottom-right-radius: 3px;
-  -webkit-border-bottom-left-radius: 0;
-  -webkit-border-top-left-radius: 0;
-  -moz-border-radius-topright: 3px;
-  -moz-border-radius-bottomright: 3px;
-  -moz-border-radius-bottomleft: 0;
-  -moz-border-radius-topleft: 0;
-  border-top-right-radius: 3px;
-  border-bottom-right-radius: 3px;
-  border-bottom-left-radius: 0;
-  border-top-left-radius: 0;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
-  border-left: 0;
-  background: url("http://grantcr.com/files/rssnorm.png") center center no-repeat;
-  background-color: transparent;
-  -moz-box-shadow: 1px -1px 1px #e2e2e2;
-  -webkit-box-shadow: 1px -1px 1px #e2e2e2;
-  box-shadow: 1px -1px 1px #e2e2e2;
-}
-
-.fb:hover {
-  background-color: #4463a5;
-  background-image: url("http://grantcr.com/files/fbhover.png");
-  background-position: center center;
-  border-right-color: #e5e5e5;
-}
-
-.tw:hover {
-  background-color: #0ab4f2;
-  background-image: url("http://grantcr.com/files/twhover.png");
-  background-position: center center;
-  border-color: #e1e1e1;
-}
-
-.rss:hover {
-  background-color: #ff7e2b;
-  background-image: url("http://grantcr.com/files/rsshover.png");
-  background-position: center center;
-  border-left-color: #e5e5e5;
-}
